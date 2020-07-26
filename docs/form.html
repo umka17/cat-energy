@@ -43,79 +43,77 @@
     </nav>
   </header>
   <main class="container">
-    <h1 class="page-title">Каталог продукции</h1>
+    <h1 class="page-title">Подбор программы</h1>
     <b class="page-title__sub">Заполните анкету и мы подберем<br>программу питания для вашего кота</b>
     <form action="" method="GET" class="main-form">
       <fieldset class="main-form__about-cat">
         <legend class="visually-hidden">Информация о коте</legend>
-        <div class="main-form__about-container">
-          <p class="main-form__item">
-            <label for="name-f">Имя:*</label>
-            <input type="text" id="name-f" name="name" placeholder="Барсик">
-          </p>
-          <p class="main-form__item">
-            <label for="weight-f">Вес (кг):*</label>
-            <input type="text" id="weight-f" name="weight" placeholder="7">
-          </p>
-          <p class="main-form__item">
-            <label for="age-f">Возраст (лет):</label>
-            <input type="text" id="age-f" name="age" placeholder="7">
-          </p>
-        </div>
-        <div class="main-form__type-container">
-          <p class="main-form__item">
-            <label for="slim-f" class="main-form__radio-label">Похудение
-            <input type="radio" name="type" id="slim-f" value="slim" class="visually-hidden">
-            <span class="main-form__radio-checker"></span>
-            </label>
-          </p>
-          <p class="main-form__item">
-            <label for="mass-f" class="main-form__radio-label">Набор массы
-            <input type="radio" name="type" id="mass-f" value="mass" class="visually-hidden">
-            <span class="main-form__radio-checker"></span>
-            </label>
-          </p>
-          <p class="main-form__item">
-            <label for="advice-f" class="main-form__radio-label">Не знаю (Нужен ваш совет)
-            <input type="radio" name="type" id="advice-f" value="advice" class="visually-hidden">
-            <span class="main-form__radio-checker"></span>
-            </label>
-          </p>
+        <div class="main-form__about-cat-container">
+          <div class="main-form__about-container">
+            <p class="main-form__item">
+              <label for="name-f">Имя:*</label>
+              <input type="text" id="name-f" name="name" placeholder="Барсик">
+            </p>
+            <p class="main-form__item">
+              <label for="weight-f">Вес (кг):*</label>
+              <input type="text" id="weight-f" name="weight" placeholder="7">
+            </p>
+            <p class="main-form__item">
+              <label for="age-f">Возраст (лет):</label>
+              <input type="text" id="age-f" name="age" placeholder="7">
+            </p>
+          </div>
+          <div class="main-form__type-container">
+            <p class="main-form__item">
+              <label for="slim-f" class="main-form__radio-label">Похудение
+                <input type="radio" name="type" id="slim-f" value="slim" class="visually-hidden">
+                <span class="main-form__radio-checker"></span>
+              </label>
+            </p>
+            <p class="main-form__item">
+              <label for="mass-f" class="main-form__radio-label">Набор массы
+                <input type="radio" name="type" id="mass-f" value="mass" class="visually-hidden">
+                <span class="main-form__radio-checker"></span>
+              </label>
+            </p>
+            <p class="main-form__item">
+              <label for="advice-f" class="main-form__radio-label">Не знаю (Нужен ваш совет)
+                <input type="radio" name="type" id="advice-f" value="advice" class="visually-hidden">
+                <span class="main-form__radio-checker"></span>
+              </label>
+            </p>
+          </div>
         </div>
       </fieldset>
       <fieldset class="main-form__about-owner">
         <legend class="main-form__title">Контактные данные <br> (владельца кота)</legend>
-        <p class="main-form__item">
-          <label for="email-f">E-mail:*</label>
-          <input type="email" name="email" id="email-f" placeholder="kuklachev@gmail.com">
-          <svg width="17" height="13" class="main-form__email-icon">
-            <use xlink:href="#email"></use>
-        </svg>
-        </p>
-        <p class="main-form__item">
-          <label for="tel-f">Телефон:*</label>
-          <input type="tel" name="tel" id="tel-f" placeholder="8 (960) 900-60-90">
-          <svg width="20" height="20" class="main-form__tel-icon">
+       <div class="main-form__about-owner-container">
+          <p class="main-form__item">
+            <label for="email-f">E-mail:*</label>
+            <input type="email" name="email" id="email-f" placeholder="kuklachev@gmail.com">
+            <svg width="17" height="13" class="main-form__email-icon">
+              <use xlink:href="#email"></use>
+            </svg>
+          </p>
+          <p class="main-form__item">
+            <label for="tel-f">Телефон:*</label>
+            <input type="tel" name="tel" id="tel-f" placeholder="8 (960) 900-60-90">
+            <svg width="20" height="20" class="main-form__tel-icon">
               <use xlink:href="#tel"></use>
-          </svg>
-        </p>
+            </svg>
+          </p>
+       </div>
       </fieldset>
       <fieldset class="main-form__comment">
         <legend class="main-form__title">Комментарий</legend>
-        <textarea name="comments" id="comments-f" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+        <textarea name="comments" id="comments-f" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="main-form__additional">
         <legend class="main-form__title">Дополнительно</legend>
-      <div class="main-form__additional-container">
+        <div class="main-form__additional-container">
           <p class="main-form__item">
             <label for="sugar-f" class="main-form__checkbox-label">Сахарозаменитель
               <input type="checkbox" name="sugar" id="sugar-f" class="visually-hidden">
-              <span class="main-form__checkbox-checker"></span>
-            </label>
-          </p>
-          <p class="main-form__item">
-            <label for="water-f" class="main-form__checkbox-label">Молоко
-              <input type="checkbox" name="water " id="water-f" class="visually-hidden">
               <span class="main-form__checkbox-checker"></span>
             </label>
           </p>
@@ -126,24 +124,30 @@
             </label>
           </p>
           <p class="main-form__item">
+            <label for="water-f" class="main-form__checkbox-label">Молоко
+              <input type="checkbox" name="water " id="water-f" class="visually-hidden">
+              <span class="main-form__checkbox-checker"></span>
+            </label>
+          </p>
+          <p class="main-form__item">
             <label for="vatamins-f" class="main-form__checkbox-label">Витамины
               <input type="checkbox" name="vitamins" id="vatamins-f" class="visually-hidden">
               <span class="main-form__checkbox-checker"></span>
             </label>
           </p>
-      </div>
+        </div>
       </fieldset>
-     <div class="main-form__bottom">
+      <div class="main-form__bottom">
         <input type="submit" value="Отправить заявку" class="button main-form__button">
         <p class="main-form__remark">* — Обязательные поля</p>
       </div>
-      </form>
+    </form>
   </main>
   <footer>
     <section class="address container">
       <h2 class="visually-hidden">Наш адрес</h2>
       <p class="address__slogo">приглашаем <br> к сотрудничеству <br> дилеров!</p>
-      <p class="address__point">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+      <p class="address__point">ул. Большая <br> Конюшенная, д. 19/8 <br> <br> Санкт-Петербург</p>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Адресс по карте</h2>
@@ -187,6 +191,7 @@
       </div>
     </section>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
